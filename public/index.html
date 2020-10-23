@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <!-- **DO THIS**: -->
+    <!--   Replace SDK_VERSION_NUMBER with the current SDK version number -->
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.771.0.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+
+    <script src="./script2.js"></script>
+    <script>
+       function getHtml(template) {
+          return template.join('\n');
+       }
+       
+    </script>
+  </head>
+  <body>
+    <h1>My Photos</h1>
+    <input id="photoupload" type="file" accept="image/*">
+    <button onclick="addPhoto()">Upload</button>
+    <button onclick="ViewPhotos()">ViewPhotos</button>
+    <div id="app"></div>
+  </body>
+</html>
